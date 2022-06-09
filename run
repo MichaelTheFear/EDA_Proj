@@ -1,0 +1,5 @@
+#!/bin/bash
+
+    gcc main.c trie.c -o binaryC -lm
+    valgrind -q --undef-value-errors=no --leak-check=full ./binaryC 
+    rm -f binaryC
